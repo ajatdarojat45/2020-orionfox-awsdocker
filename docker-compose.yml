@@ -10,6 +10,7 @@ services:
     container_name: app1
     volumes:
       - ".:/usr/local/application"
+      - "/usr/local/application/node_modules"
     build: .
     ports:
       - 3003:3000
